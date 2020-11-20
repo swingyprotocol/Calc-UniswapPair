@@ -1,3 +1,3 @@
 # Calculate Uniswap Pairs
 
-Calculate uniswap pairs by inputting token address and corresponding weth address.
+Simple tool to calculate uniswap pair address by inputting token address and corresponding weth address.
