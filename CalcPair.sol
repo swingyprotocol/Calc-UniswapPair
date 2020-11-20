@@ -51,7 +51,7 @@ library SafeMath {
         return a % b;
 
     }
-    }
+}
     
 library UniswapV2Library {
     using SafeMath for uint;
@@ -77,10 +77,10 @@ library UniswapV2Library {
 contract CalcUniswapPair {
     
     address public constant uniswapV2Factory = address(0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f);
-    address public uniswapPair;
+    address public uniswapfPair;
     
      
-     function CalcPair(address TokenAddress, address WETH) public returns(address) {
+     function CalcPair(address TokenAddress, address WETH) public returns(address uniswapPair) {
         (address token0, address token1) = UniswapV2Library.sortTokens(address(TokenAddress), address(WETH));
         uniswapPair = UniswapV2Library.pairFor(uniswapV2Factory, token0, token1);
         
